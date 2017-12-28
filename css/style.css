@@ -1,0 +1,534 @@
+html{
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+#showcase{
+  background: url('../img/background.png');
+  background-size:100% 100%; 
+  background-repeat: no-repeat;
+  height: 100vh;
+  filter: grayscale(30%);
+}
+ul.nav{
+  width: 600px;
+}
+nav.navbar{
+	padding-top: 2%;
+}
+nav .nav-link{
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+}
+a.nav-link:hover{
+  background-color: rgba(161, 226, 104, 0.5);
+  border-radius: 10px;
+}
+a.nav-link.active{
+  border-bottom: solid 2px rgb(161, 226, 104);
+}
+li.nav-item.brand{
+	margin-left: 2%;
+	margin-right: 2%;
+}
+a.navbar-brand{
+	text-decoration: none;
+	color: rgb(213, 149, 65);
+	font-size: 35px;
+	margin-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+form.search{
+  display: none;
+}
+
+div.text-an{
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+div.me{
+  transition: all 0.2s;
+  display: none;
+}
+
+span.title{
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+span.body{
+  font-size: 1.2vw;
+  color: #000;
+  }
+div.an {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  color: rgb(213, 149, 65);
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+div.an:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+div.an:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+div.an:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+div.me{
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+
+
+h1{
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  padding-top: 1%;
+  margin-bottom: 0;
+}
+button.disc{
+  margin-left: 40%;
+  margin-right: 46%;
+  margin-top: 5%;
+  display: none;
+  transition: all 0.2s;
+}
+
+section#about{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+div.about-title h1{
+  text-align: center;
+  color: rgb(117, 113, 115);
+  font-size: 2em;
+
+}
+section#about hr{
+  background: rgb(213, 149, 65);
+  width: 100px;
+  margin-top: 1%;
+  margin-bottom: 100px;
+}
+div.about-body{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+div.about-body p{
+  color: rgb(117, 113, 115);
+  font-weight: bold;
+  text-align: justify;
+  font-size: 1.2em;
+
+}
+div.about-body span{
+  color: rgb(213, 149, 65);
+}
+div.skills h1{
+  color: rgb(117, 113, 115);
+  font-size: 2em;
+}
+div.skills-icon{
+  font-size: 1.5em;
+  text-align: center;
+  color: rgb(213, 149, 65);
+}
+div.skills-title{
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 5%;
+  text-align: center;
+}
+i.fa.fa-mobile{
+  font-size: 1.7em;
+}
+div.skills-body{
+  color: rgb(117, 113, 115);
+  text-align: center;
+}
+
+section#work{
+  margin-top: 10%;
+}
+section#work h1{
+  color: rgb(117, 113, 115);
+  font-size: 2em;
+
+}
+section#work hr{
+  background: rgb(213, 149, 65);
+ width: 100px;
+  margin-top: 1%;
+  margin-bottom: 100px;
+}
+
+div#cigal{
+  background: url('../img/cigal.png');
+  margin-left: 20%;
+  margin-bottom: 10%;
+  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  width: 930px;
+  height: 480px;
+  transition: all 0.5s ease-out;
+}
+
+div#cigal.animate{
+  background-color: #353533;
+  background-blend-mode: multiply;
+}
+
+div#cigal p{
+  color: #e0e0e2;
+  padding-left: 5%;
+  text-shadow: 2px 2px #595857;
+}
+div#cigal p.no{
+  font-size: 10em;
+  font-family: roboto;
+  font-weight: bold;
+  display: inline-block;
+  position:relative;
+    top:-70px;
+    padding-left: 80%;
+}
+div.cigal-title{
+  display: none;
+}
+div#cigal p.title{
+  font-size: 3em;
+  font-weight: bold;
+ padding-top: 5%;
+}
+div#cigal p.body{
+  font-size: 1.4em;
+  }
+p.body button{
+  margin-left: 5%;
+  background: linear-gradient(to right, #d59541, #f2d596);
+  color: #fff;
+}
+div#nc{
+  background: url('../img/nc.png');
+  margin-left: 20%;
+  margin-bottom: 10%;
+  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  width: 930px;
+  height: 480px;
+  transition: all 0.5s ease-out;
+}
+div#nc.animate{
+  background-color: #353533;
+  background-blend-mode: multiply;
+}
+div#nc p{
+  color: #e0e0e2;
+  padding-left: 5%;
+  text-shadow: 2px 2px #595857;
+}
+div#nc p.no{
+  font-size: 10em;
+  font-family: roboto;
+  font-weight: bold;
+  display: inline-block;
+  position:relative;
+    top:-70px;
+    padding-left: 80%;
+}
+div.nc-title{
+  display: none;
+}
+div#nc p.title{
+  font-size: 3em;
+  font-weight: bold;
+ padding-top: 5%;
+}
+div#nc p.body{
+  font-size: 1.4em;
+}
+
+@media (max-width: 1400px) {
+  div.text-an{
+  margin-left: 40%;
+  margin-top: 15%;
+}
+div.me{
+  margin-left: 35%;
+  margin-top: 12%;
+}
+div#cigal{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 830px;
+  height: 380px;
+}
+div#cigal p.title{
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: -10%;
+}
+div#nc{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 830px;
+  height: 380px;
+}
+div#nc p.title{
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: -10%;
+}
+
+@media (max-width: 1199px) {
+  div.text-an{
+  margin-left: 40%;
+  margin-top: 15%;
+}
+div.me{
+  margin-left: 35%;
+  margin-top: 15%;
+}
+div#cigal{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 630px;
+  height: 380px;
+}
+div#cigal p.title{
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: -10%;
+}
+div#nc{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 630px;
+  height: 380px;
+}
+div#nc p.title{
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: -10%;
+}
+
+}
+@media (max-width: 991px) {
+  div.text-an{
+  margin-left: 35%;
+  margin-top: 20%;
+}
+div.me{
+  margin-left: 35%;
+  margin-top: 20%;
+}
+
+div.an {
+  font-size: 2.5vw;
+}
+div#cigal{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 500px;
+  height: 380px;
+}
+div#cigal p.title{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: -10%;
+}
+div#nc{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 500px;
+  height: 380px;
+}
+div#nc p.title{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: -10%;
+}
+}
+
+@media (max-width: 767px) {
+  div.text-an{
+  margin-left: 35%;
+  margin-top: 25%;
+}
+div.me{
+  margin-left: 35%;
+  margin-top: 30%;
+}
+div#cigal{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 380px;
+  height: 280px;
+}
+div#cigal p.title{
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: -30%;
+}
+div#cigal p.no{
+  font-size: 6em;
+}
+div#nc{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 380px;
+  height: 280px;
+}
+div#nc p.title{
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: -30%;
+}
+div#nc p.no{
+  font-size: 6em;
+}
+}
+
+@media (max-width: 575px) {
+ div.text-an{
+  margin-left: 35%;
+  margin-top: 40%;
+}
+div.an {
+  font-size: 3vw;
+}
+div.me{
+  margin-left: 35%;
+  margin-top: 30%;
+}
+section#work{
+  margin: 10%;
+}
+div#cigal{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 300px;
+  height: 200px;
+}
+div#cigal p.title{
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: -50%;
+}
+div#cigal p.no{
+  font-size: 4em;
+}
+div#nc{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 300px;
+  height: 200px;
+}
+div#nc p.title{
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: -50%;
+}
+div#nc p.no{
+  font-size: 4em;
+}
+}
+@media (max-width: 475px) {
+ div.text-an{
+  margin-left: 35%;
+  margin-top: 45%;
+}
+div.an {
+  font-size: 3vw;
+}
+div.me{
+  margin-left: 35%;
+  margin-top: 40%;
+}
+button.disc{
+  margin-left: 32%;
+  margin-right: 46%;
+  margin-top: 5%;
+  display: none;
+  transition: all 0.2s;
+}
+section#work{
+  margin: 5%;
+}
+div#cigal{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 250px;
+  height: 150px;
+}
+div#cigal p.title{
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: -40%;
+}
+div#cigal p.no{
+  font-size: 4em;
+}
+div#nc{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 250px;
+  height: 150px;
+}
+div#nc p.title{
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: -40%;
+}
+div#nc p.no{
+  font-size: 4em;
+}
+}
+
+
+
