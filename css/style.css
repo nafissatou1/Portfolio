@@ -53,11 +53,19 @@ li.nav-item.brand{
 a.navbar-brand{
 	text-decoration: none;
 	color: rgb(213, 149, 65);
-	font-size: 35px;
+	font-size: 50px;
 	margin-right: 0;
 	padding-top: 0;
 	padding-bottom: 0;
+  font-family: 'Great Vibes', cursive;
 }
+
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Alex Brush', cursive;
+font-family: 'Allura', cursive;
+font-family: 'Arizonia', cursive;
+*/
+
 form.search{
   display: none;
 }
@@ -334,9 +342,10 @@ div.ad-body{
   margin-top: 10%;
   margin-left: 10%;
 }
-h2.social{
-  margin-left: 10%;
+h2.social i{
+  margin-left: -10%;
   margin-top: 10%;
+  color: #ccc;
 }
 div.message h2{
   margin-left: 55%;
