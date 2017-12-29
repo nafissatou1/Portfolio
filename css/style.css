@@ -1,3 +1,4 @@
+
 html{
   width: 100%;
   margin: 0;
@@ -9,14 +10,22 @@ body{
   padding: 0;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
-  
+  background: #edeff2;
 }
 #showcase{
-  background: url('../img/background.png');
-  background-size:100% 100%; 
-  background-repeat: no-repeat;
-  height: 100vh;
-  filter: grayscale(30%);
+  background: url('../img/img2.jpeg');
+  background-color: #686867;
+  background-blend-mode: multiply;
+  background-position: center center;
+      background-repeat:  no-repeat;
+      background-attachment: fixed;
+      background-size:  cover;
+      height: 100vh;
+      margin-bottom: 10%;
+  
+}
+.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 ul.nav{
   width: 600px;
@@ -26,11 +35,11 @@ nav.navbar{
 }
 nav .nav-link{
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 	font-size: 20px;
 }
 a.nav-link:hover{
-  background-color: rgba(161, 226, 104, 0.5);
+  background-color: rgba(161, 226, 104, 0.4);
   border-radius: 10px;
 }
 a.nav-link.active{
@@ -53,22 +62,19 @@ form.search{
 }
 
 div.text-an{
-  margin-left: 40%;
-  margin-top: 10%;
+  margin-left: 30%;
+  padding-top: 20%;
 }
 
-div.me{
-  transition: all 0.2s;
-  display: none;
-}
 
 span.title{
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: 4vw;
+  color: #fff;
 }
 span.body{
-  font-size: 1.2vw;
-  color: #000;
+  font-size: 2vw;
+  color: #fff;
   }
 div.an {
   display:inline-block;
@@ -76,7 +82,7 @@ div.an {
   white-space:nowrap;
   color: rgb(213, 149, 65);
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 50px;
 }
 
 div.an:first-of-type {    /* For increasing performance 
@@ -117,10 +123,6 @@ div.an:last-of-type span {
     80% {opacity:1;}
     100% {opacity:0;width:355px;}
 }
-div.me{
-  margin-left: 35%;
-  margin-top: 5%;
-}
 
 
 
@@ -129,15 +131,10 @@ h1{
   font-size: 70px;
   font-weight: bold;
   padding-top: 1%;
+  color: #fff;
   margin-bottom: 0;
 }
-button.disc{
-  margin-left: 40%;
-  margin-right: 46%;
-  margin-top: 5%;
-  display: none;
-  transition: all 0.2s;
-}
+
 
 section#about{
   margin-left: 20%;
@@ -196,6 +193,7 @@ div.skills-body{
 
 section#work{
   margin-top: 10%;
+  margin-bottom: 20%
 }
 section#work h1{
   color: rgb(117, 113, 115);
@@ -212,7 +210,7 @@ section#work hr{
 div#cigal{
   background: url('../img/cigal.png');
   margin-left: 20%;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
   width: 930px;
   height: 480px;
@@ -292,16 +290,76 @@ div#nc p.title{
 div#nc p.body{
   font-size: 1.4em;
 }
+section#contact{
+  margin-top: 10%;
+}
+section#contact h1{
+  color: rgb(117, 113, 115);
+  font-size: 2em;
 
+}
+section#contact hr{
+  background: rgb(213, 149, 65);
+ width: 100px;
+  margin-top: 1%;
+  margin-bottom: 100px;
+}
+section#contact div.message{
+  width: 700px;
+  height: 500px;
+  background: #fff;
+  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  margin-left: 25%;
+  margin-bottom: 100px;
+  position: relative;
+
+}
+section#contact div.address{
+  width: 350px;
+  height: 400px;
+  background: rgb(213, 149, 65);
+  margin-top: -68%;
+  margin-left: -10%;
+  position: absolute;
+  filter: blur(0.5px) drop-shadow(2px 2px 2px #6f6f70);
+  color: #545556;
+
+  }
+div.address h1{
+  margin-top: 10%;
+}
+
+div.ad-body{
+  margin-top: 10%;
+  margin-left: 10%;
+}
+h2.social{
+  margin-left: 10%;
+  margin-top: 10%;
+}
+div.message h2{
+  margin-left: 55%;
+  padding-bottom: 5%;
+   padding-top: 5%;
+  color: #545556;
+font-weight: bold;
+color: rgb(213, 149, 65);
+}
+div.msg-body{
+  width: 200px;
+  height: 400px;
+ margin-left: 55%;
+ color: #545556;
+font-weight: bold;
+}
+div.msg-body button{
+background-color: rgb(213, 149, 65);
+color: #fff;
+border-radius: 10px;
+margin-left: 5%;
+}  
 @media (max-width: 1400px) {
-  div.text-an{
-  margin-left: 40%;
-  margin-top: 15%;
-}
-div.me{
-  margin-left: 35%;
-  margin-top: 12%;
-}
+  
 div#cigal{
   margin-left: 15%;
   margin-bottom: 10%;
@@ -326,14 +384,7 @@ div#nc p.title{
 }
 
 @media (max-width: 1199px) {
-  div.text-an{
-  margin-left: 40%;
-  margin-top: 15%;
-}
-div.me{
-  margin-left: 35%;
-  margin-top: 15%;
-}
+ 
 div#cigal{
   margin-left: 15%;
   margin-bottom: 10%;
@@ -359,18 +410,7 @@ div#nc p.title{
 
 }
 @media (max-width: 991px) {
-  div.text-an{
-  margin-left: 35%;
-  margin-top: 20%;
-}
-div.me{
-  margin-left: 35%;
-  margin-top: 20%;
-}
-
-div.an {
-  font-size: 2.5vw;
-}
+  
 div#cigal{
   margin-left: 15%;
   margin-bottom: 10%;
@@ -393,17 +433,20 @@ div#nc p.title{
   font-weight: bold;
   margin-top: -10%;
 }
+section#contact div.message{
+  width: 650px;
+  height: 500px;
+  margin-left: 12%;
+}
+div.text-an{
+  margin-left: 30%;
+  padding-top: 30%;
+}
+
 }
 
 @media (max-width: 767px) {
-  div.text-an{
-  margin-left: 35%;
-  margin-top: 25%;
-}
-div.me{
-  margin-left: 35%;
-  margin-top: 30%;
-}
+  
 div#cigal{
   margin-left: 15%;
   margin-bottom: 10%;
@@ -432,20 +475,37 @@ div#nc p.title{
 div#nc p.no{
   font-size: 6em;
 }
+section#contact div.message{
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  margin-left: 8%;
+  margin-bottom: 100px;
+  position: relative;
+
+}
+section#contact div.address{
+  width: 250px;
+  height: 400px;
+  background: rgb(213, 149, 65);
+  margin-top: -90%;
+  margin-left: -10%;
+  position: absolute;
+  filter: blur(0.5px) drop-shadow(2px 2px 2px #6f6f70);
+  color: #545556;
+  }
+  div.msg-body{
+  width: 150px;
+  height: 400px;
+ margin-left: 55%;
+ color: #545556;
+font-weight: bold;
+
 }
 
 @media (max-width: 575px) {
- div.text-an{
-  margin-left: 35%;
-  margin-top: 40%;
-}
-div.an {
-  font-size: 3vw;
-}
-div.me{
-  margin-left: 35%;
-  margin-top: 30%;
-}
+
 section#work{
   margin: 10%;
 }
@@ -477,26 +537,46 @@ div#nc p.title{
 div#nc p.no{
   font-size: 4em;
 }
+section#contact div.message{
+  width: 420px;
+  height: 500px;
+  background: #fff;
+  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  margin-left: 5%;
+  margin-bottom: 100px;
+  position: relative;
+
 }
-@media (max-width: 475px) {
+section#contact div.address{
+  width: 230px;
+  height: 400px;
+  background: rgb(213, 149, 65);
+  margin-top: -105%;
+  margin-left: -10%;
+  position: absolute;
+  filter: blur(0.5px) drop-shadow(2px 2px 2px #6f6f70);
+  color: #545556;
+
+  }
  div.text-an{
-  margin-left: 35%;
-  margin-top: 45%;
+  margin-left: 30%;
+  padding-top: 40%;
 }
 div.an {
-  font-size: 3vw;
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  color: rgb(213, 149, 65);
+  font-weight: bold;
+  font-size: 40px;
 }
-div.me{
-  margin-left: 35%;
-  margin-top: 40%;
+ul.nav{
+  width: 150px;
 }
-button.disc{
-  margin-left: 32%;
-  margin-right: 46%;
-  margin-top: 5%;
-  display: none;
-  transition: all 0.2s;
 }
+@media (max-width: 475px) {
+ 
+
 section#work{
   margin: 5%;
 }
@@ -509,8 +589,11 @@ div#cigal{
 div#cigal p.title{
   font-size: 1em;
   font-weight: bold;
-  margin-top: -40%;
+  margin-top: -50%;
 }
+div#cigal p.body{
+  font-size: 1em;
+  }
 div#cigal p.no{
   font-size: 4em;
 }
@@ -525,8 +608,60 @@ div#nc p.title{
   font-weight: bold;
   margin-top: -40%;
 }
+div#nc p.body{
+  font-size: 1em;
+  }
 div#nc p.no{
   font-size: 4em;
+}
+div.about-body p{
+  text-align: left;
+}
+div.about-body{
+  margin-left: 0.2%;
+  margin-right: 0.2%;
+}
+section#contact div.message{
+  width: 300px;
+  height: 500px;
+  background: #fff;
+  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  margin-left: 5%;
+  margin-bottom: 100px;
+  position: relative;
+
+}
+section#contact div.address{
+  width: 230px;
+  height: 400px;
+  background: rgb(213, 149, 65);
+  margin-top: -5%;
+  margin-left: 10%;
+  position: absolute;
+  filter: blur(0.5px) drop-shadow(2px 2px 2px #6f6f70);
+  color: #545556;
+  }
+  div.msg-body{
+  width: 150px;
+  height: 400px;
+ margin-left: 20%;
+ color: #545556;
+font-weight: bold;
+}
+div.message h2{
+ margin-left: 20%;
+}
+div.text-an{
+  margin-left: 20%;
+  padding-top: 50%;
+}
+div.an {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  color: rgb(213, 149, 65);
+  font-weight: bold;
+  font-size: 35px;
 }
 }
 
