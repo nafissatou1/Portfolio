@@ -1,17 +1,6 @@
 $(document).ready(function(){
-
-$('i.fa.fa-angle-down').hover(function(){
-	$('div.me').show();
-	$('div.text-an').hide();
-	$('button.disc').show();
-	$('i.fa.fa-angle-down').hide();
-});
-$('div.wrap').mouseout(function(){
-	$('div.me').hide();
-	$('div.text-an').show();
-	$('button.disc').hide();
-	$('i.fa.fa-angle-down').show();
-
+$('.navbar-toggler-icon').click(function(){
+$('li.nav-item.brand').hide();
 });
 
 $('i.fa.fa-search').mouseover(function(){
@@ -51,5 +40,50 @@ $('i.fa').css({"filter": "blur(0.5px) drop-shadow(7px 7px 7px #878784)"});
 $('i.fa').mouseleave(function(){
 $('i.fa').css({"filter": "none"});
 });
+
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    // Do something
+    if (scroll >= 800){
+    $('nav.navbar').css({"background-color": "rgba(59, 61, 57, 0.4)"});
+    }
+});
+
+
+   var sections = $('section')
+  , nav = $('nav')
+  , nav_height = nav.outerHeight();
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+  
+  sections.each(function() {
+    var top = $(this).offset().top - nav_height,
+        bottom = top + $(this).outerHeight();
+    
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('active');
+      sections.removeClass('active');
+      
+      $(this).addClass('active');
+      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+    }
+  });
+});
+
+nav.find('a').on('click', function () {
+  var $el = $(this)
+    , id = $el.attr('href');
+  
+  $('html, body').animate({
+    scrollTop: $(id).offset().top - nav_height}, 500);
+  
+  return false;
+});
+
+
+
+
+
 });
 
