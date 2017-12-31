@@ -12,7 +12,7 @@ body{
   background: #edeff2;
 }
 #showcase{
-  background: url('../img/img2.jpeg');
+  background: url('../img/bg1.jpeg');
   background-color: #686867;
   background-blend-mode: multiply;
   background-position: center center;
@@ -407,7 +407,7 @@ div.footer-ad button{
 
 
 @media (max-width: 1400px) {
-  
+
 div#cigal{
   margin-left: 15%;
   margin-bottom: 10%;
@@ -432,7 +432,7 @@ div#nc p.title{
 }
 
 @media (max-width: 1199px) {
- 
+
 div#cigal{
   margin-left: 15%;
   margin-bottom: 10%;
@@ -457,7 +457,9 @@ div#nc p.title{
 }
 }
 @media (max-width: 991px) {
-  
+  #showcase{
+  background: url('../img/bg991.jpg');
+}
 div#cigal{
   margin-left: 15%;
   margin-bottom: 10%;
@@ -493,7 +495,9 @@ div.text-an{
 }
 
 @media (max-width: 767px) {
-  
+  #showcase{
+  background: url('../img/bg767.jpg');
+}
 div#cigal{
   margin-left: 15%;
   margin-bottom: 10%;
@@ -621,7 +625,9 @@ ul.nav{
 }
 }
 @media (max-width: 475px) {
- 
+#showcase{
+  background: url('../img/bg475.jpg');
+}
 
 section#work{
   margin: 5%;
@@ -712,6 +718,11 @@ div.an {
 section#footer{
   margin-top: 150%;
   height: 200px;
+}
+}
+@media (max-width: 320px) {
+#showcase{
+  background: url('../img/bg321.jpg');
 }
 }
 
