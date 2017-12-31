@@ -49,6 +49,7 @@ $(window).scroll(function (event) {
     }
 });
 
+
    var sections = $('section')
   , nav = $('nav')
   , nav_height = nav.outerHeight();
@@ -80,9 +81,62 @@ nav.find('a').on('click', function () {
   return false;
 });
 
+$('input').keyup(function(){
+('body').find()
+});
+
+$( "button[type='submit']" ).click(function(){
+    //alert('click');
+    //alert( $('#search').val() );
+    //findString('300');
+    findString( $('#search').val() );
+    //window.find('300');
+    //window.find( $('#search').val() );
+    //alert(document.getElementById('search').value);
+    //window.find( document.getElementById('search').value );
+    return false;
+});
 
 
+var TRange=null;
 
+function findString (str) {
+
+ if (parseInt(navigator.appVersion)<4) return;
+ var strFound;
+ if (window.find) {
+
+  // console.log('Browser supports "window.find()" method');
+  // CODE FOR BROWSERS THAT SUPPORT window.find
+
+  strFound=self.find(str);
+  if (!strFound) {
+   strFound=self.find(str,0,1);
+   while (self.find(str,0,1)) continue;
+  }
+ }
+ else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+  // EXPLORER-SPECIFIC CODE
+
+  if (TRange!=null) {
+   TRange.collapse(false);
+   strFound=TRange.findText(str);
+   if (strFound) TRange.select();
+  }
+  if (TRange==null || strFound==0) {
+   TRange=self.document.body.createTextRange();
+   strFound=TRange.findText(str);
+   if (strFound) TRange.select();
+  }
+ }
+ else if (navigator.appName=="Opera") {
+  alert ("Opera browsers not supported, sorry...")
+  return;
+ }
+ if (!strFound) alert ("String '"+str+"' not found!")
+ return;
+}
 
 });
 
