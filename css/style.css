@@ -222,7 +222,7 @@ div#cigal{
   background: url('../img/cigal.png');
   margin-left: 20%;
   margin-bottom: 15%;
-  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  filter: drop-shadow(10px 10px 10px #6f6f70);
   width: 930px;
   height: 480px;
   transition: all 0.5s ease-out;
@@ -267,7 +267,7 @@ div#nc{
   background: url('../img/nc.png');
   margin-left: 20%;
   margin-bottom: 20%;
-  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  filter: drop-shadow(10px 10px 10px #6f6f70);
   width: 930px;
   height: 480px;
   transition: all 0.5s ease-out;
@@ -319,7 +319,7 @@ section#contact div.message{
   width: 700px;
   height: 500px;
   background: #fff;
-  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  filter: drop-shadow(10px 10px 10px #6f6f70);
   margin-left: 25%;
   margin-bottom: 100px;
   position: relative;
@@ -332,7 +332,7 @@ section#contact div.address{
   margin-top: -68%;
   margin-left: -10%;
   position: absolute;
-  filter: blur(0.5px) drop-shadow(2px 2px 2px #6f6f70);
+  filter: drop-shadow(2px 2px 2px #6f6f70);
   color: #545556;
 
   }
@@ -530,7 +530,7 @@ section#contact div.message{
   width: 500px;
   height: 500px;
   background: #fff;
-  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  filter: drop-shadow(10px 10px 10px #6f6f70);
   margin-left: 8%;
   margin-bottom: 100px;
   position: relative;
@@ -543,7 +543,7 @@ section#contact div.address{
   margin-top: -90%;
   margin-left: -10%;
   position: absolute;
-  filter: blur(0.5px) drop-shadow(2px 2px 2px #6f6f70);
+  filter: drop-shadow(2px 2px 2px #6f6f70);
   color: #545556;
   }
   div.msg-body{
@@ -592,7 +592,7 @@ section#contact div.message{
   width: 420px;
   height: 500px;
   background: #fff;
-  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  filter: drop-shadow(10px 10px 10px #6f6f70);
   margin-left: 5%;
   margin-bottom: 100px;
   position: relative;
@@ -605,7 +605,7 @@ section#contact div.address{
   margin-top: -105%;
   margin-left: -10%;
   position: absolute;
-  filter: blur(0.5px) drop-shadow(2px 2px 2px #6f6f70);
+  filter: drop-shadow(2px 2px 2px #6f6f70);
   color: #545556;
 
   }
@@ -677,7 +677,7 @@ section#contact div.message{
   width: 300px;
   height: 500px;
   background: #fff;
-  filter: blur(0.5px) drop-shadow(10px 10px 10px #6f6f70);
+  filter: drop-shadow(10px 10px 10px #6f6f70);
   margin-left: 5%;
   margin-bottom: 100px;
   position: relative;
@@ -690,7 +690,7 @@ section#contact div.address{
   margin-top: -5%;
   margin-left: 10%;
   position: absolute;
-  filter: blur(0.5px) drop-shadow(2px 2px 2px #6f6f70);
+  filter: drop-shadow(2px 2px 2px #6f6f70);
   color: #545556;
   }
   div.msg-body{
