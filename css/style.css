@@ -67,7 +67,10 @@ font-family: 'Arizonia', cursive;
 form.search{
   display: none;
   margin-bottom: 2%;
-}
+  }
+  input#search{
+    width: 150px;
+  }
 
 div.text-an{
   margin-left: 30%;
@@ -398,7 +401,9 @@ div.footer-ad button{
   border-radius: 20px;
   color: #6d6d6d;
 }
-}
+
+
+
 
 
 @media (max-width: 1400px) {
@@ -450,7 +455,6 @@ div#nc p.title{
   font-weight: bold;
   margin-top: -10%;
 }
-
 }
 @media (max-width: 991px) {
   
@@ -544,9 +548,9 @@ section#contact div.address{
  margin-left: 55%;
  color: #545556;
 font-weight: bold;
-
 }
 
+}
 @media (max-width: 575px) {
 
 section#work{
@@ -602,7 +606,7 @@ section#contact div.address{
 
   }
  div.text-an{
-  margin-left: 30%;
+  margin-left: 20%;
   padding-top: 40%;
 }
 div.an {
@@ -611,12 +615,10 @@ div.an {
   white-space:nowrap;
   color: rgb(213, 149, 65);
   font-weight: bold;
-  font-size: 30px;
 }
 ul.nav{
   width: 150px;
 }
-
 }
 @media (max-width: 475px) {
  
@@ -625,7 +627,7 @@ section#work{
   margin: 5%;
 }
 div#cigal{
-  margin-left: 15%;
+  margin-left: 10%;
   margin-bottom: 10%;
   width: 250px;
   height: 150px;
@@ -642,7 +644,7 @@ div#cigal p.no{
   font-size: 4em;
 }
 div#nc{
-  margin-left: 15%;
+  margin-left: 10%;
   margin-bottom: 10%;
   width: 250px;
   height: 150px;
@@ -696,7 +698,7 @@ div.message h2{
  margin-left: 20%;
 }
 div.text-an{
-  margin-left: 10%;
+  margin-left: 13%;
   padding-top: 50%;
 }
 div.an {
@@ -705,7 +707,11 @@ div.an {
   white-space:nowrap;
   color: rgb(213, 149, 65);
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
+}
+section#footer{
+  margin-top: 150%;
+  height: 200px;
 }
 }
 
