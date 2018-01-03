@@ -220,6 +220,12 @@ section#work hr{
 
 div#cigal{
   background: url('../img/cigal.png');
+  background-color: #686867;
+  background-blend-mode: multiply;
+  background-position: center center;
+      background-repeat:  no-repeat;
+      background-attachment: fixed;
+      background-size:  cover;
   margin-left: 20%;
   margin-bottom: 20%;
   filter: drop-shadow(10px 10px 10px #6f6f70);
@@ -227,7 +233,6 @@ div#cigal{
   height: 480px;
   transition: all 0.5s ease-out;
 }
-
 div#cigal.animate{
   background-color: #353533;
   background-blend-mode: multiply;
@@ -264,7 +269,13 @@ p.body button{
   color: #fff;
 }
 div#nc{
-  background: url('../img/nc.png');
+  background: url('../img/nc.jpg');
+  background-color: #686867;
+  background-blend-mode: multiply;
+  background-position: center center;
+      background-repeat:  no-repeat;
+      background-attachment: fixed;
+      background-size:  cover;
   margin-left: 20%;
   margin-bottom: 20%;
   filter: drop-shadow(10px 10px 10px #6f6f70);
@@ -410,9 +421,10 @@ div.footer-ad button{
 
 div#cigal{
   margin-left: 15%;
-  margin-bottom: 10%;
-  width: 830px;
-  height: 380px;
+  margin-bottom: 20%;
+  background: url('../img/cigal1400.jpg');
+  width: 837px;
+  height: 432px;
 }
 div#cigal p.title{
   font-size: 2em;
@@ -422,8 +434,9 @@ div#cigal p.title{
 div#nc{
   margin-left: 15%;
   margin-bottom: 10%;
-  width: 830px;
-  height: 380px;
+  background: url('../img/nc1400.jpg');
+  width: 837px;
+  height: 432px;
 }
 div#nc p.title{
   font-size: 2em;
@@ -435,9 +448,10 @@ div#nc p.title{
 
 div#cigal{
   margin-left: 15%;
-  margin-bottom: 10%;
-  width: 630px;
-  height: 380px;
+  margin-bottom: 20%;
+ background: url('../img/cigal1199.jpg');
+ width: 640px;
+  height: 330px;
 }
 div#cigal p.title{
   font-size: 2em;
@@ -447,8 +461,9 @@ div#cigal p.title{
 div#nc{
   margin-left: 15%;
   margin-bottom: 10%;
-  width: 630px;
-  height: 380px;
+  background: url('../img/nc1199.jpg');
+ width: 640px;
+  height: 330px;
 }
 div#nc p.title{
   font-size: 2em;
@@ -462,9 +477,10 @@ div#nc p.title{
 }
 div#cigal{
   margin-left: 15%;
-  margin-bottom: 10%;
-  width: 500px;
-  height: 380px;
+  margin-bottom: 20%;
+ background: url('../img/cigal1199.jpg');
+  width: 608px;
+  height: 314px;
 }
 div#cigal p.title{
   font-size: 1.5em;
@@ -474,8 +490,9 @@ div#cigal p.title{
 div#nc{
   margin-left: 15%;
   margin-bottom: 10%;
-  width: 500px;
-  height: 380px;
+  background: url('../img/nc1199.jpg');
+  width: 608px;
+  height: 314px;
 }
 div#nc p.title{
   font-size: 1.5em;
@@ -500,9 +517,10 @@ div.text-an{
 }
 div#cigal{
   margin-left: 15%;
-  margin-bottom: 10%;
-  width: 380px;
-  height: 280px;
+  margin-bottom: 20%;
+ background: url('../img/cigal767.jpg');
+  width: 491px;
+  height: 254px;
 }
 div#cigal p.title{
   font-size: 1em;
@@ -515,8 +533,9 @@ div#cigal p.no{
 div#nc{
   margin-left: 15%;
   margin-bottom: 10%;
-  width: 380px;
-  height: 280px;
+  background: url('../img/nc767.jpg');
+  width: 491px;
+  height: 254px;
 }
 div#nc p.title{
   font-size: 1em;
@@ -561,10 +580,14 @@ section#work{
   margin: 10%;
 }
 div#cigal{
-  margin-left: 15%;
-  margin-bottom: 10%;
-  width: 300px;
-  height: 200px;
+  margin-left: 7%;
+  margin-bottom: 20%;
+ background: url('../img/cigal575.jpg');
+  width: 393px;
+  height: 203px;
+}
+div.cigal-title{
+  padding-top: 40%;
 }
 div#cigal p.title{
   font-size: 1em;
@@ -575,10 +598,14 @@ div#cigal p.no{
   font-size: 4em;
 }
 div#nc{
-  margin-left: 15%;
+  margin-left: 7%;
   margin-bottom: 10%;
-  width: 300px;
-  height: 200px;
+  background: url('../img/nc575.jpg');
+  width: 393px;
+  height: 203px;
+}
+div.nc-title{
+  padding-top: 40%;
 }
 div#nc p.title{
   font-size: 1em;
@@ -627,16 +654,21 @@ ul.nav{
 @media (max-width: 475px) {
 #showcase{
   background: url('../img/bg475.jpg');
+  
 }
 
 section#work{
   margin: 5%;
 }
 div#cigal{
-  margin-left: 10%;
-  margin-bottom: 10%;
-  width: 250px;
-  height: 150px;
+  margin-left: 5%;
+  margin-bottom: 20%;
+  background: url('../img/cigal475.jpg');
+   width: 334px;
+  height: 173px;
+}
+div.cigal-title{
+  padding-top: 30%;
 }
 div#cigal p.title{
   font-size: 1em;
@@ -650,10 +682,14 @@ div#cigal p.no{
   font-size: 4em;
 }
 div#nc{
-  margin-left: 10%;
+  margin-left: 5%;
   margin-bottom: 10%;
-  width: 250px;
-  height: 150px;
+  background: url('../img/nc321.jpg');
+ width: 334px;
+  height: 173px;
+}
+div.nc-title{
+  padding-top: 30%;
 }
 div#nc p.title{
   font-size: 1em;
@@ -723,6 +759,23 @@ section#footer{
 @media (max-width: 320px) {
 #showcase{
   background: url('../img/bg321.jpg');
+}
+div#cigal{
+background: url('../img/cigal321.jpg');
+ width: 267px;
+  height: 138px;
+  margin-bottom: 20%;
+}
+div.cigal-title{
+  padding-top: 25%;
+}
+div#nc{
+background: url('../img/nc321.jpg');
+ width: 267px;
+  height: 138px;
+}
+div.nc-title{
+  padding-top: 20%;
 }
 }
 
