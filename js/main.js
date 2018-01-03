@@ -17,7 +17,7 @@ $('div#cigal p').css({"color": '#fff'});
 $('div#cigal').mouseout(function(){
 $('div#cigal').addClass("animate", 1000, "easeInBack");
 $('div#cigal p.no').show();
-$('div#cigal p.title').css({"padding-top": '5%'});
+$('div#cigal p.title').css({"padding-top": '2%'});
 $('div#cigal p').css({"color": '#e0e0e2'});
 });
 
